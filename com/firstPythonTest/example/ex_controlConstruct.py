@@ -3,6 +3,7 @@ Created on 2016. 2. 19.
 
 @author: leejinwon
 '''
+# 테스트
 # 2. control construct
 # 2.1. while
 # ref. : https://wikidocs.net/56

@@ -78,3 +78,50 @@ def globalInFunction():
 globalInFunction()
 print lVal   
 
+
+# 3.4. return Value
+# ref. : https://wikidocs.net/63
+# ref. : https://ko.wikipedia.org/wiki/%EB%AA%B8%EB%AC%B4%EA%B2%8C
+def getStandardWeight(sex, tall):
+    standardWeight = 0
+    if(sex == 'male'):
+        standardWeight = (tall - 100) * 0.9
+    elif(sex == 'female'):
+        standardWeight = (tall - 100) * 0.85
+    else:        
+        standardWeight = -1
+    return standardWeight
+
+result = getStandardWeight('female', 173)
+
+print 'standard weight is : ' , result     
+
+
+#3.5. Lambda 
+print 'lambda test 1 : ', (lambda x,y: x + y)(10,20)
+
+print 'lambda test 2 : ', list(map(lambda x:x**2, range(5)))
+
+print 'lambda test 3 : ', reduce(lambda x, y : x + y, [0, 1, 2, 3, 4])
+
+print 'lambda test 4 : ', reduce(lambda x, y : y + x, 'abcde')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
